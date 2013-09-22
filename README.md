@@ -37,11 +37,11 @@ Giving weight to words
 ----------------------
 Search results have to appear in order of pertinence. The profile that are more tightly related to the words entered by the user have to appear first. We need to translate this idea of pertinence into an algorithm? 
 
-	- If a searched word appears in the name of a profile, this profile should appear higher in a search result than 	another one where the word appears only in the about body.
+	* If a searched word appears in the name of a profile, this profile should appear higher in a search result than 	another one where the word appears only in the about body.
 
-    - If a searched word appears twice in the about content of a profile, the search result should show this profile before others where the word appears only once.
+    * If a searched word appears twice in the about content of a profile, the search result should show this profile before others where the word appears only once.
 
-	- This is why we need to give weight to words according to the part of the profile they come from. As the weight factors have to be easily accessible, to make them vary if we want to fine tune our search engine algorithm, we will put them in the application database in the wordindex table
+	* This is why we need to give weight to words according to the part of the profile they come from. As the weight factors have to be easily accessible, to make them vary if we want to fine tune our search engine algorithm, we will put them in the application database in the wordindex table
 	
 The basic weight of the words will be given by their number of occurrences in the text and we can use the array_count_values() PHP function for that.
 
