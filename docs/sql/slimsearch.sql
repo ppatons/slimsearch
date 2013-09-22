@@ -42,3 +42,11 @@ CREATE TABLE IF NOT EXISTS `wordindex` (
   `weight` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+DROP TABLE IF EXISTS `stopwords`;
+CREATE TABLE IF NOT EXISTS `stopwords` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `word` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
