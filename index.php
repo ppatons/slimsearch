@@ -5,9 +5,6 @@ require 'vendor/autoload.php';
 // load required files RedBean
 require_once('vendor/RedBean/rb.php');
 
-// register Slim auto-loader
-\Slim\Slim::registerAutoloader();
-
 // set up database connection
 R::setup('mysql:host=localhost;dbname=slimsearch','root','');
 // R::setup('mysql:host=localhost; dbname=mydatabase','user','password');
